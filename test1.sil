@@ -1,0 +1,13 @@
+sil_stage raw
+
+sil @yield : $@yield_once (Int) -> (@yields Int) {
+bb0(%0 : $Int):
+  yield (%0 : $Int), resume bb1, unwind bb2
+
+bb1:
+  %r = tuple ()
+  return %r : $()
+
+bb2:
+  unwind
+}
