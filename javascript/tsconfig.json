@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "./dist",
+    "allowJs": false,
+    "module": "commonjs",
+    "watch": true,
+    "lib": [
+      "es5",
+      "es6",
+      "esnext.asynciterable",
+      "dom",
+     ],
+  },
+  "compileOnSave": true
+}
